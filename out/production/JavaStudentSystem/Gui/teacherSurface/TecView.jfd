@@ -1,0 +1,41 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:95:p, comp ownInfo:::p:119:p, space :p:71:p, comp score:::p:119:p, space :p:82:p, comp subject:::p:119:p, space :::x}, seq t {space ::193:x, par l {seq t {comp head:::p:315:p, space :p:190:p}, seq t {comp exit:::p::p, space :p:131:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:40:p, comp head:::p:96:p, space :p:88:p, par b {comp ownInfo::b:p:61:p, comp score::b:p:61:p, comp subject::b:p:61:p}, space :p:84:p, comp exit:::p::p, space ::124:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "head"
+				"text": "学 生 管 理 系 统 教 师 界 面"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "ownInfo"
+				"text": "学生信息管理"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ownInfoActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "score"
+				"text": "学生成绩管理"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "scoreActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "subject"
+				"text": "课程管理"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "subjectActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exit"
+				"text": "退出"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 700, 555 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

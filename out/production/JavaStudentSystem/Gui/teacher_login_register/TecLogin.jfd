@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:165:p, par t {seq l {par l {par t:l {comp forget:::p::p, seq {comp tecPassword:::p::p, space :p:222:p}}, par t:l {comp passwordText::t:p:207:p, seq l {comp tecNum:::p::p, space :::p, comp numText:::p:207:p}}}, space u:::p, comp checkBox1:::p::p}, seq l {space :p:21:p, comp loginButton:::p::p, space :p:109:p, comp registerButton:::p::p}}, space ::69:x}, seq t {space ::243:x, par l {seq t {comp tecHead:::p:116:p, space :p:214:p}, seq t {comp exit:::p::p, space :p:56:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:57:p, comp tecHead:::p:96:p, space s:::p, par b {comp numText::b:p::p, comp tecNum::b:p:30:p}, space :p:29:p, par b {comp tecPassword::b:p:30:p, comp passwordText::b:p::p, comp checkBox1::b:p::p}, space u:::p, comp forget:::p::p, space :p:28:p, par b {comp registerButton::b:p::p, comp loginButton::b:p::p}, space ::47:x, comp exit:::p::p, space :p:47:p}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "Dialog", 0, 23 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tecHead"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+				"text": "教师登录"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tecNum"
+				"text": "工号"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tecPassword"
+				"text": "密码"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginButton"
+				"text": "登录"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "registerButton"
+				"text": "注册"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "forget"
+				"text": "忘记密码"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "forgetMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exit"
+				"text": "退出"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordText"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": "显示密码"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 575, 510 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

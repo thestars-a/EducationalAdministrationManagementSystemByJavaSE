@@ -1,0 +1,35 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq {space ::64:x, comp scrollPane1:::p:372:p}, seq {space :p:81:p, comp sure:::p::p, space ::199:x, comp cancel:::p::p}}, space :p:67:p}}"
+			"$verticalGroup": "par l {seq l {space :p:24:p, comp scrollPane1:::p:254:p, space ::27:x, par b {comp sure::b:p::p, comp cancel::b:p::p}, space :p:53:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+					"rowHeight": 23
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sure"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": "取消"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 505, 420 )
+			"location": new java.awt.Point( 45, 20 )
+		} )
+	}
+}

@@ -1,0 +1,42 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:70:p, par l:::p {seq {comp sure:::p::p, space :::x, comp cancel:::p::p}, seq {par l {comp label2::l:p::p, comp label1::l:p::p}, space u:::p, par l {comp surepassword:::p:152:p, comp newpassword:::p:152:p}}}, space ::90:x}}"
+			"$verticalGroup": "par l {seq l {space :p:57:p, par b {comp label1::b:p:35:p, comp newpassword::b:p:35:p}, space :p:29:p, par b {comp label2::b:p:35:p, comp surepassword::b:p:35:p}, space ::36:x, par b {comp sure::b:p::p, comp cancel::b:p::p}, space :p:38:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "新密码"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "密码确认"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sure"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": "取消"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "newpassword"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "surepassword"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 400, 300 )
+			"location": new java.awt.Point( 95, 50 )
+		} )
+	}
+}

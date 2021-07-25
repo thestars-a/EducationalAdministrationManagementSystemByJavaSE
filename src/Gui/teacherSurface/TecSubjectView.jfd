@@ -1,0 +1,36 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:161:p, comp head:::p:94:p}, seq l {space :p:67:p, comp button1:::p:130:p, space :p:71:p, comp subjectChooser:::p:134:p}}, space ::31:x}, seq t {space :0:261:x, comp return_bt:::p::p, space :p:94:p}}"
+			"$verticalGroup": "par l {seq l {space :p:29:p, comp head:::p:70:p, space u:::p, par b {comp subjectChooser::b:p:57:p, comp button1::b:p:55:p}, space ::64:x, comp return_bt:::p::p, space :p:56:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "head"
+				"text": "课程管理"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 10, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "subjectChooser"
+				"text": "课程选择"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "subjectChooserActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "return_bt"
+				"text": "返回"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "return_btActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "课程信息"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 80, 45 )
+			"size": new java.awt.Dimension( 435, 350 )
+		} )
+	}
+}

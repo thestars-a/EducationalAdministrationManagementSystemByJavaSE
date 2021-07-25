@@ -1,0 +1,39 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:73:p, par l:::p {seq {comp sure:::p::p, space :::x, comp cancel:::p::p}, comp scrollPane1:::p:461:p}}, seq l {space :p:92:p, comp label1:::p::p}}, space ::104:x}}"
+			"$verticalGroup": "par l {seq l {space ::26:x, comp label1:::p:28:p, space s:::p, comp scrollPane1:::p:340:p, space s:::p, par b {comp sure::b:p::p, comp cancel::b:p::p}, space :p:27:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"rowHeight": 30
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sure"
+				"text": "确定"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": "取消"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "请这位老师录入或修改所受课程学生成绩，点击确认提交"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 640, 520 )
+		} )
+	}
+}

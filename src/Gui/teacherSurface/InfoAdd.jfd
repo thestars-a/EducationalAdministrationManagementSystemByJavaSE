@@ -1,0 +1,47 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:63:p, par l {seq {comp label3:::p::p, space :p:36:p, comp subject:::p::p}, par t:::p {seq t {space :p:9:p, comp sure:::p::p, space :::x, comp cancel:::p::p}, seq l {par l {comp label1::l:p::p, comp label2::l:p::p}, space :p:26:p, par l {comp id:::p:184:p, comp name:::p:184:p}}}}, space ::81:x}}"
+			"$verticalGroup": "par l {seq l {space :p:38:p, par b {comp label1::b:p:32:p, comp id::b:p::p}, space u:::p, par l {comp label2:::p:32:p, comp name::l:p::p}, space s:::p, par l {comp label3:::p:32:p, comp subject::l:p::p}, space ::51:x, par b {comp cancel::b:p::p, comp sure::b:p::p}, space :p:38:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "学号"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "姓名"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "课程"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "id"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "name"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "subject"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sure"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": "取消"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 175, 65 )
+			"size": new java.awt.Dimension( 380, 315 )
+		} )
+	}
+}

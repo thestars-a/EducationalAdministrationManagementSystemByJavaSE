@@ -1,0 +1,54 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:17:p, par l {seq {comp timeshow:::p:227:p, space :26:329:x}, seq l {comp weekshow:::p:53:p, space :::p, comp chinaday:::p:96:p, space ::275:x, comp button1:::p:101:p, space :p:25:p}}}, seq t {space ::195:x, comp head:::p:189:p, space :p:189:p}, seq l {space :p:225:p, par t {comp tecLogin:::p:122:p, comp stuLogin:::p:122:p}, space ::226:x}}"
+			"$verticalGroup": "par l {seq l {space :p:46:p, comp head:::p:96:p, space :p:60:p, comp stuLogin:::p:39:p, space :p:50:p, comp tecLogin:::p:39:p, space ::66:x, comp timeshow:::p:30:p, space :::p, par b {comp weekshow::b:p:30:p, comp button1::b:p::p, comp chinaday::b:p:30:p}, space :p:14:p}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "Dialog", 0, 23 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "head"
+				"text": "学 生 管 理 系 统"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "stuLogin"
+				"text": "学生登录"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 7, false )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "stuLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "tecLogin"
+				"text": "教师登录"
+				"font": #SwingDerivedFont0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "tecLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "登录日志"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "timeshow"
+				"text": "text"
+				"font": &SwingDerivedFont1 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "weekshow"
+				"text": "text"
+				"font": #SwingDerivedFont1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "chinaday"
+				"text": "text"
+				"font": #SwingDerivedFont1
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 5 )
+			"size": new java.awt.Dimension( 575, 510 )
+		} )
+	}
+}

@@ -1,0 +1,67 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:393:p, comp label1:::p::p}, seq l {space :p:79:p, comp label2:::p::p, space s:::p, comp stu_info_combo:::p:122:p, space s:::p, comp stu_info_tf:::p:322:p, space :p:28:p, comp seek:::p::p, space :p:29:p, comp allSeek:::p::p}}, space ::18:x}, seq t {space :0:48:x, comp scrollPane1:::p:872:p, space :p:58:p}, seq t {space :p:80:p, comp returnBt:::p::p, space ::466:x, comp add:::p::p, space :p:78:p, comp del:::p::p, space :p:120:p}}"
+			"$verticalGroup": "par l {seq l {space u:::p, comp label1:::p::p, space u:::p, par b {comp stu_info_tf::b:p::p, comp stu_info_combo::b:p::p, comp label2::b:p::p, comp seek::b:p::p, comp allSeek::b:p::p}, space :p:43:p, comp scrollPane1:::p:363:p, space ::30:x, par b {comp del::b:p::p, comp add::b:p::p, comp returnBt::b:p::p}, space :p:25:p}}"
+		} ) {
+			name: "this"
+			addEvent( new FormEvent( "java.awt.event.WindowFocusListener", "windowGainedFocus", "thisWindowGainedFocus", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "学生信息管理"
+				"font": new java.awt.Font( "Dialog", 0, 26 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "请选择查询条件："
+				"font": new java.awt.Font( "Dialog", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "stu_info_combo"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "stu_info_comboActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "stu_info_tf"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "stu_info_tfActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "table1"
+					"rowHeight": 40
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "seek"
+				"text": "查询"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "seekActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "allSeek"
+				"text": "全部信息查询"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "allSeekActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "add"
+				"text": "添加"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "del"
+				"text": "删除"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "delActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "returnBt"
+				"text": "返回"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "returnBtActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 980, 610 )
+			"location": new java.awt.Point( 0, 25 )
+		} )
+	}
+}

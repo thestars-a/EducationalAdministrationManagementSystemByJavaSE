@@ -1,0 +1,118 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:130:p, par t {comp serect_ans::t:p::p, comp serect_que::t:p::p, comp password::t:p::p, comp college::t:p::p, comp sex::t:p::p, comp stuName::t:p::p, comp stuNum::t:p::p, comp checkCode::t:p::p, comp email::t:p::p}, space s:::p, par l {comp ansText::l:p:156:p, comp queText::l:p:156:p, seq l {comp passwordText:::p:156:p, space :::p, comp checkBox1:::p::p}, comp collegeChoose::l:p:132:p, seq l {comp male:::p::p, space u:::p, comp fmale:::p::p}, comp nameText::l:p:156:p, comp numText::l:p:156:p, seq {comp emailText:::p:156:p, space u:::p, comp sendnum:::p::p}, seq {comp checkCodeText:::p:156:p, space u:::p, comp time:::p:154:p}}}, seq l {space :p:159:p, comp sure:::p::p, space :p:75:p, comp cancel:::p::p}}, space ::36:x}}"
+			"$verticalGroup": "par l {seq l {space ::30:x, par b {comp email::b:p::p, comp emailText::b:p::p, comp sendnum::b:p::p}, space s:::p, par b {comp checkCode::b:p::p, comp checkCodeText::b:p::p, comp time::b:p::p}, space :p:15:p, par b {comp stuNum::b:p::p, comp numText::b:p::p}, space u:::p, par b {comp stuName::b:p::p, comp nameText::b:p::p}, space u:::p, par b {comp sex::b:p::p, comp male::b:p::p, comp fmale::b:p::p}, space u:::p, par b {comp college::b:p::p, comp collegeChoose::b:p::p}, space u:::p, par b {comp password::b:p::p, comp passwordText::b:p::p, comp checkBox1::b:p::p}, space s:::p, par b {comp serect_que::b:p::p, comp queText::b:p::p}, space s:::p, par b {comp serect_ans::b:p::p, comp ansText::b:p::p}, space :p:48:p, par b {comp sure::b:p::p, comp cancel::b:p::p}, space :p:28:p}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "Dialog", 0, 23 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stuName"
+				"text": "姓名"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "sex"
+				"text": "性别"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "college"
+				"text": "院系"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "password"
+				"text": "密码"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stuNum"
+				"text": "学号"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameText"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "male"
+				"text": "男"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "fmale"
+				"text": "女"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "collegeChoose"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sure"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": "取消"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "serect_que"
+				"text": "密保问题"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "serect_ans"
+				"text": "密保答案"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ansText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "queText"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordText"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": "显示密码"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "email"
+				"text": "邮箱"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "checkCode"
+				"text": "验证码"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "emailText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "checkCodeText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "sendnum"
+				"text": "发送验证码"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "sendnumMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "sendnumMousePressed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "time"
+				"text": "                            "
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 575, 550 )
+			"location": new java.awt.Point( 60, 20 )
+		} )
+	}
+}

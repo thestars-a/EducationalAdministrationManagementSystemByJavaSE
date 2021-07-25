@@ -1,0 +1,72 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:163:p, par l {seq {comp password:::p::p, space s:::p, comp passwordText:::p:156:p}, seq l {comp tecNum:::p::p, space s:::p, comp numText:::p:156:p}, seq l {comp tecName:::p::p, space s:::p, comp nameText:::p:156:p}, seq l {comp sex:::p::p, space s:::p, comp male:::p::p, space :p:37:p, comp fmale:::p::p}, seq l {comp college:::p::p, space s:::p, comp collegeChoose:::p::p}}}, seq l {space :p:128:p, comp sure:::p::p, space :p:122:p, comp cancel:::p::p}}, space ::167:x}}"
+			"$verticalGroup": "par l {seq {space :p:51:p, par b {comp tecNum::b:p::p, comp numText::b:p::p}, space s:::p, par l {comp tecName:::p::p, comp nameText:::p::p}, space :p:24:p, par b {comp sex::b:p::p, comp male::b:p::p, comp fmale::b:p::p}, space s:::p, par l {comp college:::p::p, comp collegeChoose:::p::p}, space :p:25:p, par b {comp password::b:p::p, comp passwordText::b:p::p}, space :p:33:p, par b {comp sure::b:p::p, comp cancel::b:p::p}, space ::84:x}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "Dialog", 0, 23 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tecName"
+				"text": "姓名"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "sex"
+				"text": "性别"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "college"
+				"text": "院系"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "password"
+				"text": "密码"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "tecNum"
+				"text": "工号"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "nameText"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "passwordText"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "male"
+				"text": "男"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "fmale"
+				"text": "女"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "collegeChoose"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "sure"
+				"text": "确定"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sureActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "cancel"
+				"text": "取消"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cancelActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 575, 460 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}

@@ -1,0 +1,81 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:175:p, comp loginButton:::p::p, space :p:119:p, comp registerButton:::p::p, space :::x}, seq t {space :::x, par l {seq t {comp stuHead:::p:116:p, space :p:261:p}, seq t {comp exit:::p::p, space :p:42:p}}}, seq l {space :p:147:p, par l {seq {par l {comp stuNum::l:p::p, comp stuPassword::l:p::p}, space :p:34:p, par t {comp numText::t:p:207:p, comp passwordText::t:p:207:p, comp findPassword::t:p::p}, space u:::p, comp checkBox1:::p::p, space :::x}, seq {comp checkNum:::p::p, space s:::p, comp checkNumText:::p:106:p, space u:::p, comp checkPhoto:::p:75:p, space u:::p, comp label1:::::x, space :p:138:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:36:p, comp stuHead:::p:96:p, space :p:40:p, par b {comp stuNum::b:p:30:p, comp numText::b:p::p}, space :p:55:p, par b {comp stuPassword::b:p:30:p, comp passwordText::b:p::p, comp checkBox1::b:p::p}, space :::p, comp findPassword:::p::p, space :p:23:p, par b {comp checkNum::b:p:30:p, comp checkNumText::b:p::p, comp checkPhoto::b:p:30:p, comp label1::b:p::p}, space ::37:x, par l {seq t {par b {comp loginButton::b:p::p, comp registerButton::b:p::p}, space :p:65:p}, seq t {comp exit:::p::p, space :p:16:p}}}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "Dialog", 0, 23 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stuHead"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 12, false )
+				"text": "学生登录"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stuNum"
+				"text": "学号"
+				"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 0, 5, false )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "numText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "stuPassword"
+				"text": "密码"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginButton"
+				"text": "登录"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "registerButton"
+				"text": "注册"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "findPassword"
+				"text": "忘记密码?"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "findPasswordMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exit"
+				"text": "退出"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": "显示密码"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordText"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "checkNum"
+				"text": "验证码"
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "checkPhoto"
+				"text": "  "
+				"font": #SwingDerivedFont0
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "看不清楚?换一张"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "label1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "checkNumText"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 650, 540 )
+			"location": new java.awt.Point( 15, 205 )
+		} )
+	}
+}
