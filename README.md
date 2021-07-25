@@ -1,0 +1,2 @@
+java实现的简单教务管理系统(Mysql+java+javaMail+JFormDesigner+ItextPDF)
+其中的jpg和pdf是程序产生的图片验证码和课表导出成PDF格式，在程序中可直接打开，存放位置为项目路径也可修改
